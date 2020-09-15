@@ -55,6 +55,10 @@ extern NSString *const CHTCollectionElementKindSectionFooter;
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
 
 @optional
+
+// 自定义Section背景颜色
+- (UIColor *)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout backgroundColorForSection:(NSInteger)section;
+
 /**
  *  Asks the delegate for the column count in a section
  *

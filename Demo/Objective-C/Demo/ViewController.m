@@ -106,7 +106,7 @@
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-  return 2;
+  return 10;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -136,6 +136,27 @@
 #pragma mark - CHTCollectionViewDelegateWaterfallLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
   return [self.cellSizes[indexPath.item % 4] CGSizeValue];
+}
+
+// 自定义Section背景颜色 1723 23
+- (UIColor *)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout backgroundColorForSection:(NSInteger)section {
+    if (section == 0) {
+        return [UIColor redColor];
+    } else if (section == 1) {
+        return [UIColor blueColor];
+    } else if (section == 2) {
+        return [UIColor greenColor];
+    }  else if (section == 3) {
+        return [UIColor orangeColor];
+    }  else if (section == 4) {
+        return [UIColor yellowColor];
+    }  else if (section == 5) {
+        return [UIColor purpleColor];
+    }  else if (section == 6) {
+        return [UIColor magentaColor];
+    } else {
+        return [UIColor clearColor];
+    }
 }
 
 @end
