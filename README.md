@@ -14,6 +14,10 @@ Screen Shots
 ------------
 ![2 columns](https://cloud.githubusercontent.com/assets/474/3419095/25b4de9e-fe56-11e3-9b98-690319d736ce.png)
 
+新增Section背景自定义颜色
+
+![show](./Screenshots/show.gif)
+
 Features
 --------
 * Easy to use, it tries to imitate [UICollectionViewFlowLayout]'s usage as much as possible.
